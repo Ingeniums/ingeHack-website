@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import About from '../components/About'
+import Agenda from '../components/Agenda'
 export default function Home() {
   return (
     <div className="bg-ingehack-black">
@@ -14,6 +15,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <About />
+        <Agenda />
     </div>
   )
 }
