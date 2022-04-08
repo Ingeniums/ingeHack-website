@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import Navbar from '../components/Navbar'
 export default function Home() {
   return (
     <div className="bg-ingehack-black">
@@ -9,8 +9,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1 className="text-ingehack-green text-center">Ingehack website!</h1>
-      
+      <Navbar />
     </div>
   )
 }

@@ -4,3 +4,9 @@
 body {
   background: #0d0d0d;
 }
+.nav-item {
+  @apply text-ingehack-white text-xl pb-1 transition duration-700 hover:border-b-2 hover:border-b-ingehack-green
+}
+.nav-burger {
+  @apply w-8 h-1 bg-ingehack-green
+}

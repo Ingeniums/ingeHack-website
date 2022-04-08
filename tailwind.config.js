@@ -6,9 +6,9 @@ module.exports = {
   theme: {
     colors: {
       'ingehack-black':'#0d0d0d',
-      'ingehack-green': '#11b813',
+      'ingehack-green': '#00ff00',
       'ingehack-white': '#fff',
-      'ingehack-gray': '#595959'
+      'ingehack-gray': '#292929'
     },
     extend: {},
 
