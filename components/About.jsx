@@ -2,7 +2,7 @@ import SectionTitle from "./SectionTitle";
 
 const About = () => {
     return (
-        <section className="container flex flex-col gap-12 py-12 lg:gap-16">
+        <section className="section">
             <SectionTitle title={"Abot"}/>
             <div className="flex flex-col gap-6 lg:flex-row">
                 <p className="text-ingehack-white flex-1 text-xl text-center md:text-2xl lg:text-left lg:text-3xl">
