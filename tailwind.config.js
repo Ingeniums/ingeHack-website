@@ -13,6 +13,7 @@ module.exports = {
     extend: {
       fontFamily: {
         Rubik: ["Rubik Wet Paint", "cursive"],
+        Orbitron: ["Orbitron", "sans-serif"]
       },
     },
     container: {

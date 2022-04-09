@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
-@tailwind base;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');@tailwind base;
 @tailwind components;
 @tailwind utilities;
 body {
@@ -17,5 +17,8 @@ body {
 }
 .section {
   @apply container flex flex-col gap-12 py-12 lg:gap-16
+}
+.counter {
+  @apply text-ingehack-green font-Rubik text-5xl md:text-6xl lg:text-7xl
 }
 
