@@ -4,8 +4,8 @@ const Navbar = () => {
     
     const [navbarToggle, setNavbarToggle] = useState(false)
     return (
-        <header className="px-12 py-4">
-            <div className="flex flex-col gap-4 lg:gap-0">
+        <header className="py-4">
+            <div className="container flex flex-col gap-4 lg:gap-0">
                 <div className="flex justify-between items-center ">
                     <div className="text-3xl text-ingehack-white">
                         IngeHack

@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react'
-import {getRemainingTime} from '../utils/countDownTimer'
+import {getRemainingTime} from '../../../utils/countDownTimer'
 const Counter = ({countDownLimit}) => {
     const defaultRemainingTime = {
         seconds:'00',

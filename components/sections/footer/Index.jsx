@@ -1,5 +1,5 @@
 import Image from 'next/image'
-const Footer = () => {
+const Index = () => {
     return (
         <footer className="bg-ingehack-gray">
             <div className="container  flex flex-col  gap-4 py-4 text-ingehack-white">
@@ -25,4 +25,4 @@ const Footer = () => {
     )
 }
 
-export default Footer;
+export default Index;

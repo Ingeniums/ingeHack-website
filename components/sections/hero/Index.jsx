@@ -1,9 +1,9 @@
 import Counter from './Counter'
-import style from '../styles/hero.module.css'
-const Hero = () => {
+import style from '../../../styles/hero.module.css'
+const Index = () => {
     
     return (
-        <section className="section">
+        <section className="section" id="home">
             <div className="flex flex-col items-center gap-10">
                 <div className="flex flex-col">
                         <h1 className={`font-Rubik text-ingehack-green text-[4rem] sm:text-[7rem] lg:text-[10rem] ${style.glitchedTxt}`}>Ingehack</h1>
@@ -23,4 +23,4 @@ const Hero = () => {
     )
 }
 
-export default Hero;
+export default Index;
