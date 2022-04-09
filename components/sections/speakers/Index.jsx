@@ -1,4 +1,4 @@
-import SectionTitle from './SectionTitle'
+import SectionTitle from "../../shared/SectionTitle";
 import SpeakerCard from './SpeakerCard'
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -12,9 +12,9 @@ import "swiper/css/pagination";
 import { EffectCoverflow } from "swiper";
 
 // import required modules
-const Speakers = () => {
+const Index = () => {
     return (
-        <section className="section">
+        <section className="section" id="speakers">
             <SectionTitle title={"Speakers"} />
             <div>
             <Swiper
@@ -61,4 +61,4 @@ const Speakers = () => {
     )
 }
 
-export default Speakers;
+export default Index;

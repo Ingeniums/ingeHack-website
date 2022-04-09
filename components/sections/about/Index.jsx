@@ -1,8 +1,8 @@
-import SectionTitle from "./SectionTitle";
+import SectionTitle from "../../shared/SectionTitle";
 import Image from 'next/image'
-const About = () => {
+const Index = () => {
     return (
-        <section className="section">
+        <section className="section" id="about">
             <SectionTitle title={"About"}/>
             <div className="flex flex-col items-center gap-6 lg:flex-row">
                 <p className="text-ingehack-white flex-1 text-xl text-center md:text-2xl lg:text-left lg:text-3xl">
@@ -16,4 +16,4 @@ const About = () => {
     )
 }
 
-export default About;
+export default Index;

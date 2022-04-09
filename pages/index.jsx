@@ -1,11 +1,11 @@
 import Head from 'next/head'
-import Navbar from '../components/Navbar'
-import Hero from '../components/Hero'
-import About from '../components/About'
-import Agenda from '../components/Agenda'
-import Speakers from '../components/Speakers'
-import OurClub from '../components/OurClub'
-import Footer from '../components/Footer'
+import Navbar from '../components/sections/navbar/Navbar'
+import Hero from '../components/sections/hero/Index'
+import About from '../components/sections/about/Index'
+import Agenda from '../components/sections/agenda/Index'
+import Speakers from '../components/sections/speakers/Index'
+import OurClub from '../components/sections/ourClub/Index'
+import Footer from '../components/sections/footer/Index'
 export default function Home() {
   return (
     <div className="bg-ingehack-black">

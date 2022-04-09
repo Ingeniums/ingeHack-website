@@ -1,9 +1,9 @@
-import SectionTitle from './SectionTitle'
+import SectionTitle from "../../shared/SectionTitle";
 import Link from 'next/link'
 import Image from 'next/image'
-const OurClub = () => {
+const Index = () => {
     return (
-        <section className="section">
+        <section className="section" id="club">
             <SectionTitle title={"Host Club"}/>
             <div className="flex flex-col gap-12 md:flex-row items-center md:justify-between">
                 
@@ -30,4 +30,4 @@ const OurClub = () => {
     )
 }
 
-export default OurClub
+export default Index

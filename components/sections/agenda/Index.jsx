@@ -1,10 +1,10 @@
 import LeftAgendaCard from "./LeftAgendaCard";
 import RightAgendaCard from "./RightAgendaCard";
-import SectionTitle from "./SectionTitle";
+import SectionTitle from "../../shared/SectionTitle";
 
-const Agenda = () => {
+const Index = () => {
     return (
-        <section className="section">
+        <section className="section" id="agenda">
             <SectionTitle title={"Agenda"}/>
             <div
             className="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50"
@@ -24,4 +24,4 @@ const Agenda = () => {
     )
 }
 
-export default Agenda;
+export default Index;
