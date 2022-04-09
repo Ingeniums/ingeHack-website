@@ -1,23 +1,38 @@
 import {useState, useEffect} from 'react'
 
 const Navbar = () => {
-    
     const [navbarToggle, setNavbarToggle] = useState(false)
+    const [scrollPosition, setScrollPosition] = useState(0);
+
+    const handleClick = () => {
+        if(navbarToggle) setNavbarToggle(false)
+    }
+    const handleScroll = () => {
+        setScrollPosition(window.pageYOffset);
+    };
+    
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+    
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
-        <header className="py-4">
-            <div className="container flex flex-col gap-4 lg:gap-0">
+        <header className={`py-4 fixed top-0 ${scrollPosition >0 && 'border-b-2 border-ingehack-green'} left-0 w-full z-10 bg-ingehack-black transition-all duration-500 ${navbarToggle ? 'h-full': 'h-16'}`}>
+            <div className="container flex flex-col gap-4 lgborder-b-2 border-ingehack-green:gap-0">
                 <div className="flex justify-between items-center ">
                     <div className="text-3xl text-ingehack-white">
                         IngeHack
                     </div>
 
                     <nav className="hidden lg:flex items-center gap-8">
-                        <a href="#home" className="nav-item">Home</a>
-                        <a href="#about" className="nav-item">About</a>
-                        <a href="#agenda" className="nav-item">Agenda</a>
-                        <a href="#speakers" className="nav-item">Speakers</a>
-                        <a href="#sponsors" className="nav-item">Sponsors</a>
-                        <a href="#club" className="nav-item">Our Club</a>
+                        <a href="#home" onClick={handleClick} className="nav-item">Home</a>
+                        <a href="#about" onClick={handleClick} className="nav-item">About</a>
+                        <a href="#agenda" onClick={handleClick} className="nav-item">Agenda</a>
+                        <a href="#speakers" onClick={handleClick} className="nav-item">Speakers</a>
+                        <a href="#sponsors" onClick={handleClick} className="nav-item">Sponsors</a>
+                        <a href="#club" onClick={handleClick} className="nav-item">Our Club</a>
                         <button type="button" className="bg-ingehack-green rounded-full py-2 px-8">Register</button>
                     </nav>
 
@@ -29,12 +44,12 @@ const Navbar = () => {
                 </div>
                 <div className="rounded py-4">
                     { navbarToggle && (<nav className="flex lg:hidden flex-col items-center gap-6 text-xl">
-                        <a href="#home" className="nav-item">Home</a>
-                        <a href="#about" className="nav-item">About</a>
-                        <a href="#agenda" className="nav-item">Agenda</a>
-                        <a href="#speakers" className="nav-item">Speakers</a>
-                        <a href="#sponsors" className="nav-item">Sponsors</a>
-                        <a href="#club" className="nav-item">Our Club</a>
+                        <a href="#home" onClick={handleClick} className="nav-item">Home</a>
+                        <a href="#about" onClick={handleClick} className="nav-item">About</a>
+                        <a href="#agenda" onClick={handleClick} className="nav-item">Agenda</a>
+                        <a href="#speakers" onClick={handleClick} className="nav-item">Speakers</a>
+                        <a href="#sponsors" onClick={handleClick} className="nav-item">Sponsors</a>
+                        <a href="#club" onClick={handleClick} className="nav-item">Our Club</a>
                         <button type="button" className="bg-ingehack-green rounded-full py-2 px-8">Register</button>
                     </nav>)}
                 </div>
