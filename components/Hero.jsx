@@ -12,7 +12,6 @@ const Hero = () => {
                         <h3>3rd Edition</h3>
                     </div>
                 </div>
-
                 <div className="text-ingehack-white text-xl lg:text-2xl">
                     <h3>June XX-XX, 2022</h3>
                     <p>Exact adress, Oran</p>
