@@ -1,14 +1,16 @@
 import SectionTitle from "./SectionTitle";
-
+import Image from 'next/image'
 const About = () => {
     return (
         <section className="section">
             <SectionTitle title={"About"}/>
-            <div className="flex flex-col gap-6 lg:flex-row">
+            <div className="flex flex-col items-center gap-6 lg:flex-row">
                 <p className="text-ingehack-white flex-1 text-xl text-center md:text-2xl lg:text-left lg:text-3xl">
                 IngeHack is one of the greatest Ingnenium’s events, its a CTF (Capture The Flag) competition that brings computer and information security geeks together in one place to have an amazing weekend taking on challenges, It also includes different conferences, presented by doctors and professors
                 </p>
-                <img className="w-full flex-1" src="/ingehack-about.jpeg" alt="CTF photo" />
+                <div className="flex-1">
+                    <Image height={350} width={600} src="/ingehack-about.jpeg" className="cursor-pointer" alt="CTF photo" />
+                </div>
             </div>
         </section>
     )

@@ -21,30 +21,21 @@ const Counter = ({countDownLimit}) => {
         setRemainingTime(getRemainingTime(countdown))
     }
     return (
-        <div className="flex flex-col gap-12 sm:flex-row sm:gap-12 lg:gap-24 text-center ">
-            
-                <div className="count-card">
-                <span className="countdown font-mono text-7xl">
-                    <span className="text-ingehack-green">{remainingTime.days}</span>
-                </span>
+        <div className="flex flex-col gap-12 sm:flex-row sm:gap-12 lg:gap-24 text-center ">      
+            <div className="count-card">
+                <span className="counter">{remainingTime.days}</span>
                 Days
             </div>     
             <div className="count-card">
-                <span className="countdown font-mono text-7xl">
-                    <span className="text-ingehack-green">{remainingTime.hours}</span>
-                </span>
+                <span className="counter">{remainingTime.hours}</span>
                 Hours
             </div>     
             <div className="count-card">
-                <span className="countdown font-mono text-7xl">
-                    <span className="text-ingehack-green">{remainingTime.minutes}</span>
-                </span>
+                <span className="counter">{remainingTime.minutes}</span>
                 Mins
             </div>     
             <div className="count-card">
-                <span className="countdown font-mono text-7xl">
-                    <span className="text-ingehack-green">{remainingTime.seconds}</span>
-                </span>
+                <span className="counter">{remainingTime.seconds}</span>
                 Secs
             </div>  
         </div>
