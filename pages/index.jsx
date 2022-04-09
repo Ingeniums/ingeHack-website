@@ -5,6 +5,7 @@ import About from '../components/About'
 import Agenda from '../components/Agenda'
 import Speakers from '../components/Speakers'
 import OurClub from '../components/OurClub'
+import Footer from '../components/Footer'
 export default function Home() {
   return (
     <div className="bg-ingehack-black">
@@ -20,6 +21,7 @@ export default function Home() {
         <Agenda />
         <Speakers />
         <OurClub />
+        <Footer />
 
     </div>
   )
