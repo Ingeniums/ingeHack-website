@@ -4,7 +4,7 @@ import SectionTitle from "./SectionTitle";
 
 const Agenda = () => {
     return (
-        <section className="container flex flex-col gap-12 py-12 lg:gap-16">
+        <section className="section">
             <SectionTitle title={"Agenda"}/>
             <div
             className="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50"

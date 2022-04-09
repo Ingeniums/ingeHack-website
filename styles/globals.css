@@ -5,6 +5,7 @@
 body {
   background: #0d0d0d;
 }
+
 .nav-item {
   @apply text-ingehack-white text-xl pb-1 transition duration-700 hover:border-b-2 hover:border-b-ingehack-green
 }
@@ -14,3 +15,7 @@ body {
 .count-card {
   @apply flex flex-col p-2 gap-6 text-ingehack-white
 }
+.section {
+  @apply container flex flex-col gap-12 py-12 lg:gap-16
+}
+
