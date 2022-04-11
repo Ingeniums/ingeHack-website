@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 
 
 // import required modules
-import { EffectCoverflow } from "swiper";
+import { Navigation, Pagination } from "swiper";
 
 // import required modules
 const Index = () => {
@@ -19,22 +19,17 @@ const Index = () => {
             <div>
             <Swiper
                 loop={true}
-                effect={"coverflow"}
-                grabCursor={true}
                 centeredSlides={true}
-                slidesPerView={"1"}
-                coverflowEffect={{
-                rotate: 50,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: true,
-                }}
-                pagination={true}
-                modules={[EffectCoverflow]}
-                breakpoints = {{
+                pagination={{ clickable: true, "dynamicBullets": true }}
+                initialSlide={1}
+                spaceBetween={30}
+                slidesPerView={1}
+                breakpoints={{
+                    550: {
+                        slidesPerView:2,
+                    },
                     850: {
-                        slidesPerView:3
+                        slidesPerView: 3,
                     }
                 }}
             >
