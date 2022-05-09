@@ -5,16 +5,19 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'ingehack-black':'#0d0d0d',
-      'ingehack-green': '#00ff00',
+      'ingehack-black':'#0c1c2d',
+      'ingehack-green': '#9fd21a',
       'ingehack-white': '#fff',
-      'ingehack-gray': '#292929'
+      'ingehack-gray': '#1a2332',
+      'ingehack-blue': '#5dafd1'
     },
     extend: {
       fontFamily: {
-        Rubik: ["Rubik Wet Paint", "cursive"],
-        Orbitron: ["Orbitron", "sans-serif"]
-      },
+        "Matrix": ["Matrix", "sans-serif"],
+        "NeuHaasBold": ["NeuHaasBold", "sans-serif"],
+        "NeuHaasRegular": ["NeuHaasRegular", "sans-serif"],
+        "TypographLight": ["TypographLight", "sans-serif"],
+    }
     },
     container: {
       center: true,

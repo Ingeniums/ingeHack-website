@@ -22,11 +22,11 @@ const Navbar = () => {
         <header className={`py-4 fixed top-0 ${scrollPosition >0 && 'border-b-2 border-ingehack-green'} left-0 w-full z-10 bg-ingehack-black transition-all duration-500 ${navbarToggle ? 'h-full': 'h-16'}`}>
             <div className="container flex flex-col gap-4 lgborder-b-2 border-ingehack-green:gap-0">
                 <div className="flex justify-between items-center ">
-                    <div className="text-3xl text-ingehack-white">
+                    <div className="text-2xl text-ingehack-green font-Matrix uppercase">
                         IngeHack
                     </div>
 
-                    <nav className="hidden lg:flex items-center gap-8">
+                    <nav className="hidden lg:flex items-center gap-8 font-NeuHaasBold">
                         <a href="#home" onClick={handleClick} className="nav-item">Home</a>
                         <a href="#about" onClick={handleClick} className="nav-item">About</a>
                         <a href="#agenda" onClick={handleClick} className="nav-item">Agenda</a>
@@ -43,7 +43,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className="rounded py-4">
-                    { navbarToggle && (<nav className="flex lg:hidden flex-col items-center gap-6 text-xl">
+                    { navbarToggle && (<nav className="flex lg:hidden flex-col items-center gap-6 text-xl font-NeuHaasBold">
                         <a href="#home" onClick={handleClick} className="nav-item">Home</a>
                         <a href="#about" onClick={handleClick} className="nav-item">About</a>
                         <a href="#agenda" onClick={handleClick} className="nav-item">Agenda</a>
