@@ -3,6 +3,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: Matrix;
+  src: url("/fonts/Matrix-MZ4P.ttf");
+}
+
+@font-face {
+  font-family: NeuHaasBold;
+  src: url("/fonts/NeueHaasUnicaPro-Medium.ttf");
+}
+@font-face {
+  font-family: NeuHaasRegular;
+  src: url("/fonts/NeueHaasUnicaPro-Regular.ttf");
+}
+@font-face {
+  font-family: TypographLight;
+  src: url("/fonts/TYPOGRAPH\ PRO\ Light.ttf");
+}
+
 body {
   background: #0d0d0d;
 }
@@ -20,6 +39,6 @@ body {
   @apply container flex flex-col gap-12 py-12 lg:gap-16
 }
 .counter {
-  @apply text-ingehack-green font-Rubik text-5xl md:text-6xl lg:text-7xl
+  @apply text-ingehack-green  text-5xl md:text-6xl lg:text-7xl
 }
 

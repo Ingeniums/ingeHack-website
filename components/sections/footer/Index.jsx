@@ -7,17 +7,17 @@ const Index = () => {
                     <div className="flex gap-2 items-center">
                         <Image src="/esiSBALogo.jpg" height={96} width={96} alt="Esi sba"/>
                         <div className="flex flex-col gap-2">
-                            <p>Higher school of computer science - 08 May 1945</p>
-                            <p>Sidi Bel Abbes 22016, Algeria</p>
+                            <p className="font-NeuHaasBold">Higher school of computer science - 08 May 1945</p>
+                            <p className="font-NeuHaasRegular">Sidi Bel Abbes 22016, Algeria</p>
                         </div>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <p>ingeniums@esi-sba.dz</p>
-                        <p>+213666235548</p>
+                        <p className="font-NeuHaasBold">ingeniums@esi-sba.dz</p>
+                        <p className="font-NeuHaasRegular">+213666235548</p>
                     </div>
                 </div>
 
-                <div className="text-center">
+                <div className="text-center font-NeuHaasBold">
                     <p>&copy; IngeHack 2022</p>
                 </div>
             </div>

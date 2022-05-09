@@ -6,13 +6,35 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-
-
-// import required modules
 import { Navigation, Pagination } from "swiper";
-
-// import required modules
 const Index = () => {
+    const speakers = [
+        {
+            imgPath:'/speaker1.jpg',
+            name: 'Lorem Epsum',
+            title: 'Senior penetration tester'
+        },
+        {
+            imgPath:'/speaker2.jpg',
+            name: 'Lorem Epsum',
+            title: 'CTF player'
+        },
+        {
+            imgPath:'/speaker1.jpg',
+            name: 'Lorem Epsum',
+            title: 'Phd cyber Sec'
+        },
+        {
+            imgPath:'/speaker2.jpg',
+            name: 'Lorem Epsum',
+            title: 'Senior penetration test'
+        },
+        {
+            imgPath:'/speaker1.jpg',
+            name: 'Lorem Epsum',
+            title: 'Phd cyber Sec'
+        },
+    ]
     return (
         <section className="section" id="speakers">
             <SectionTitle title={"Speakers"} />
@@ -33,23 +55,11 @@ const Index = () => {
                     }
                 }}
             >
-                    <SwiperSlide>
-                        <SpeakerCard img={"/speaker1.jpg"} name={"Lorem Epsum"} title={"Senior penetration test"}/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <SpeakerCard img={"/speaker2.jpg"} name={"Lorem Epsum"} title={"CTF player"}/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <SpeakerCard img={"/speaker1.jpg"} name={"Lorem Epsum"} title={"Phd cyber Sec"}/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <SpeakerCard img={"/speaker2.jpg"} name={"Lorem Epsum"} title={"Senior penetration test"}/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <SpeakerCard img={"/speaker1.jpg"} name={"Lorem Epsum"} title={"Senior penetration test"}/>
-                    </SwiperSlide>
-                    
-        
+                {speakers.map((speaker, idx) => {
+                    return <SwiperSlide key={idx}>
+                    <SpeakerCard img={speaker.imgPath} name={speaker.name} title={speaker.title}/>
+                </SwiperSlide>
+                })}       
             </Swiper>
             </div>
         </section>
