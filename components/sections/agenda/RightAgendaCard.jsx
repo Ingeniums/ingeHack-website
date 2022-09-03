@@ -11,11 +11,11 @@ const RightAgendaCard = ({title, content, isAnimated}) => {
                 ></div>
               </div>
               <div
-                className="bg-ingehack-green col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md"
+                className="bg-ingehack-green w-full col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md"
               >
                 <h3 className="font-semibold text-lg mb-1 font-NeuHaasBold">{title}</h3>
                 <p className="leading-tight text-justify font-NeuHaasRegular">
-                  {content}.
+                  {content}
                 </p>
               </div>
         </div>

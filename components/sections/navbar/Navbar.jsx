@@ -30,10 +30,10 @@ const Navbar = () => {
                         <a href="#home" onClick={handleClick} className="nav-item">Home</a>
                         <a href="#about" onClick={handleClick} className="nav-item">About</a>
                         <a href="#agenda" onClick={handleClick} className="nav-item">Agenda</a>
-                        <a href="#speakers" onClick={handleClick} className="nav-item">Speakers</a>
-                        <a href="#sponsors" onClick={handleClick} className="nav-item">Sponsors</a>
+                        <a href="#speakers" onClick={handleClick} className="nav-item hidden">Speakers</a>
+                        <a href="#sponsors" onClick={handleClick} className="nav-item hidden">Sponsors</a>
                         <a href="#club" onClick={handleClick} className="nav-item">Our Club</a>
-                        <button type="button" className="bg-ingehack-green rounded-full py-2 px-8">Register</button>
+                        <button type="button" className="hidden bg-ingehack-green rounded-full py-2 px-8">Register</button>
                     </nav>
 
                     <div onClick={() => setNavbarToggle(!navbarToggle)} className="flex flex-col gap-1 cursor-pointer lg:hidden">
@@ -47,10 +47,10 @@ const Navbar = () => {
                         <a href="#home" onClick={handleClick} className="nav-item">Home</a>
                         <a href="#about" onClick={handleClick} className="nav-item">About</a>
                         <a href="#agenda" onClick={handleClick} className="nav-item">Agenda</a>
-                        <a href="#speakers" onClick={handleClick} className="nav-item">Speakers</a>
-                        <a href="#sponsors" onClick={handleClick} className="nav-item">Sponsors</a>
+                        <a href="#speakers" onClick={handleClick} className="nav-item hidden">Speakers</a>
+                        <a href="#sponsors" onClick={handleClick} className="nav-item hidden">Sponsors</a>
                         <a href="#club" onClick={handleClick} className="nav-item">Our Club</a>
-                        <button type="button" className="bg-ingehack-green rounded-full py-2 px-8">Register</button>
+                        <button type="button" className="hidden bg-ingehack-green rounded-full py-2 px-8">Register</button>
                     </nav>)}
                 </div>
             </div>
