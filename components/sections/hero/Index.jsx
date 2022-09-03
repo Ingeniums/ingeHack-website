@@ -20,7 +20,7 @@ const Index = () => {
           <p className="hidden">Exact adress, Oran</p>
         </div>
 
-        <Counter countDownLimit={1665162000000} />
+        <Counter countDownLimit={1665748800000} />
       </div>
     </section>
   );
