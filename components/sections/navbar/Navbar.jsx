@@ -22,7 +22,7 @@ const Navbar = () => {
         <header className={`py-4 fixed top-0 ${scrollPosition >0 && 'border-b-2 border-ingehack-green'} left-0 w-full z-10 bg-ingehack-black transition-all duration-500 ${navbarToggle ? 'h-full': 'h-16'}`}>
             <div className="container flex flex-col gap-4 lgborder-b-2 border-ingehack-green:gap-0">
                 <div className="flex justify-between items-center ">
-                    <div className="text-2xl text-ingehack-green font-Matrix uppercase">
+                    <div className="text-2xl text-ingehack-green font-DoctorGlitch uppercase">
                         IngeHack
                     </div>
 

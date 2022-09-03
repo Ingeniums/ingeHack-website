@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,24 +21,27 @@
   font-family: TypographLight;
   src: url("/fonts/TYPOGRAPH\ PRO\ Light.ttf");
 }
+@font-face {
+  font-family: DoctorGlitch;
+  src: url("/fonts/DoctorGlitch.otf");
+}
 
 body {
   background: #0d0d0d;
 }
 
 .nav-item {
-  @apply text-ingehack-white text-xl pb-1 transition duration-700 hover:border-b-2 hover:border-b-ingehack-green
+  @apply text-ingehack-white text-xl pb-1 transition duration-700 hover:border-b-2 hover:border-b-ingehack-green;
 }
 .nav-burger {
-  @apply w-8 h-1 bg-ingehack-green
+  @apply w-8 h-1 bg-ingehack-green;
 }
 .count-card {
-  @apply flex flex-col p-2 gap-6 text-ingehack-white
+  @apply flex flex-col p-2 gap-6 text-ingehack-white;
 }
 .section {
-  @apply container flex flex-col gap-12 py-12 lg:gap-16
+  @apply container flex flex-col gap-12 py-12 lg:gap-16;
 }
 .counter {
-  @apply text-ingehack-green  text-5xl md:text-6xl lg:text-7xl
+  @apply text-ingehack-green  text-5xl md:text-6xl lg:text-7xl;
 }
-

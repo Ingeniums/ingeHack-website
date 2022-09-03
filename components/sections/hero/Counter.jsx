@@ -21,7 +21,7 @@ const Counter = ({countDownLimit}) => {
         setRemainingTime(getRemainingTime(countdown))
     }
     return (
-        <div className="flex flex-col gap-12 sm:flex-row sm:gap-12 lg:gap-24 text-center">      
+        <div className="font-DoctorGlitch flex flex-col gap-12 sm:flex-row sm:gap-12 lg:gap-24 text-center">      
             <div className="count-card">
                 <span className="counter">{remainingTime.days}</span>
                 Days

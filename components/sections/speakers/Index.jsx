@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import { Navigation, Pagination } from "swiper";
+import { FreeMode, Navigation, Pagination } from "swiper";
 const Index = () => {
     const speakers = [
         {
@@ -40,13 +40,13 @@ const Index = () => {
             <SectionTitle title={"Speakers"} />
             <div>
             <Swiper
-                loop={true}
-                centeredSlides={true}
-                pagination={{ clickable: true, "dynamicBullets": true }}
-                initialSlide={1}
+                freeMode={true}
+                modules={[FreeMode, Pagination]}
                 spaceBetween={30}
-                slidesPerView={1}
                 breakpoints={{
+                    320: {
+                        slidesPerView:1,
+                    },
                     550: {
                         slidesPerView:2,
                     },
