@@ -16,7 +16,7 @@ const Index = () => {
           </div>
         </div>
         <div className="text-ingehack-white text-xl lg:text-2xl font-NeuHaasBold mt-2 lg:mt-6">
-          <h3>October 14th, 2022</h3>
+          <h3 className="hidden">October 14th, 2022</h3>
           <p className="hidden">Exact adress, Oran</p>
         </div>
 

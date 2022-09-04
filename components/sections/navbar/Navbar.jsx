@@ -10,10 +10,10 @@ const Navbar = () => {
     const handleScroll = () => {
         setScrollPosition(window.pageYOffset);
     };
-    
+
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
-    
+
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
@@ -29,7 +29,7 @@ const Navbar = () => {
                     <nav className="hidden lg:flex items-center gap-8 font-NeuHaasBold">
                         <a href="#home" onClick={handleClick} className="nav-item">Home</a>
                         <a href="#about" onClick={handleClick} className="nav-item">About</a>
-                        <a href="#agenda" onClick={handleClick} className="nav-item">Agenda</a>
+                        <a href="#agenda" onClick={handleClick} className="nav-item hidden">Agenda</a>
                         <a href="#speakers" onClick={handleClick} className="nav-item hidden">Speakers</a>
                         <a href="#sponsors" onClick={handleClick} className="nav-item hidden">Sponsors</a>
                         <a href="#club" onClick={handleClick} className="nav-item">Our Club</a>
@@ -46,7 +46,7 @@ const Navbar = () => {
                     { navbarToggle && (<nav className="flex lg:hidden flex-col items-center gap-6 text-xl font-NeuHaasBold">
                         <a href="#home" onClick={handleClick} className="nav-item">Home</a>
                         <a href="#about" onClick={handleClick} className="nav-item">About</a>
-                        <a href="#agenda" onClick={handleClick} className="nav-item">Agenda</a>
+                        <a href="#agenda" onClick={handleClick} className="nav-item hidden">Agenda</a>
                         <a href="#speakers" onClick={handleClick} className="nav-item hidden">Speakers</a>
                         <a href="#sponsors" onClick={handleClick} className="nav-item hidden">Sponsors</a>
                         <a href="#club" onClick={handleClick} className="nav-item">Our Club</a>

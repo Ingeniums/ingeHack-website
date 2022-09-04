@@ -5,7 +5,7 @@ import SectionTitle from "../../shared/SectionTitle";
 const Index = () => {
 
     return (
-        <section className="section" id="agenda">
+        <section className="hidden" id="agenda">
             <SectionTitle title={"Agenda"}/>
             <div
             className="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50"

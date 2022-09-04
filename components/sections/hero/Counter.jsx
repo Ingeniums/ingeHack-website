@@ -21,23 +21,23 @@ const Counter = ({countDownLimit}) => {
         setRemainingTime(getRemainingTime(countdown))
     }
     return (
-        <div className="font-DoctorGlitch flex flex-col gap-12 sm:flex-row sm:gap-12 lg:gap-24 text-center">      
+        <div className="font-DoctorGlitch flex flex-col gap-12 sm:flex-row sm:gap-12 lg:gap-24 text-center hidden">      
             <div className="count-card">
                 <span className="counter">{remainingTime.days}</span>
                 Days
-            </div>     
+            </div>
             <div className="count-card">
                 <span className="counter">{remainingTime.hours}</span>
                 Hours
-            </div>     
+            </div>
             <div className="count-card">
                 <span className="counter">{remainingTime.minutes}</span>
                 Mins
-            </div>     
+            </div>
             <div className="count-card">
                 <span className="counter">{remainingTime.seconds}</span>
                 Secs
-            </div>  
+            </div>
         </div>
     )
 }
