@@ -1,13 +1,13 @@
 
-const LeftAgendaCard = ({title, content, isAnimated}) => {
+const LeftAgendaCard = ({title, content,time, isAnimated}) => {
     return (
         <div className="flex flex-row-reverse md:contents">
               <div
-                className="bg-ingehack-green w-full col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
+                className="bg-ingehack-green w-3/4 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
               >
                 <h3 className="font-semibold text-lg mb-1 font-NeuHaasBold">{title}</h3>
                 <p className="leading-tight text-justify font-NeuHaasRegular">
-                  {content}
+                <b>{time}</b> {content}
                 </p>
               </div>
               <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
