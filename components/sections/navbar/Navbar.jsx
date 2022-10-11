@@ -33,7 +33,7 @@ const Navbar = () => {
                         <a href="#speakers" onClick={handleClick} className="nav-item hidden">Speakers</a>
                         <a href="#sponsors" onClick={handleClick} className="nav-item hidden">Sponsors</a>
                         <a href="#club" onClick={handleClick} className="nav-item">Our Club</a>
-                        <button type="button" className="hidden bg-ingehack-green rounded-full py-2 px-8">Register</button>
+                        <button type="button" className="bg-ingehack-green rounded-full py-2 px-8" onClick={()=> location.href='https://docs.google.com/forms/d/e/1FAIpQLSflLO4SBJTZXhDOkfgBIjhB36dvobOGpLOOOv5lzxIAC742yQ/viewform'} >Register</button>
                     </nav>
 
                     <div onClick={() => setNavbarToggle(!navbarToggle)} className="flex flex-col gap-1 cursor-pointer lg:hidden">
@@ -50,7 +50,7 @@ const Navbar = () => {
                         <a href="#speakers" onClick={handleClick} className="nav-item hidden">Speakers</a>
                         <a href="#sponsors" onClick={handleClick} className="nav-item hidden">Sponsors</a>
                         <a href="#club" onClick={handleClick} className="nav-item">Our Club</a>
-                        <button type="button" className="hidden bg-ingehack-green rounded-full py-2 px-8">Register</button>
+                        <button type="button" className="bg-ingehack-green rounded-full py-2 px-8" onClick={()=> location.href='https://docs.google.com/forms/d/e/1FAIpQLSflLO4SBJTZXhDOkfgBIjhB36dvobOGpLOOOv5lzxIAC742yQ/viewform'} >Register</button>
                     </nav>)}
                 </div>
             </div>
