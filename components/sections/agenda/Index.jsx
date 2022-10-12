@@ -19,7 +19,7 @@ const Index = () => {
               <LeftAgendaCard title={"14/10"} content={"Dinner"} time={"21:00"} isAnimated={false}/>
               <RightAgendaCard title={"15/10"} content={"Breakfast"} time={"09:00"} isAnimated={false}/>
               <LeftAgendaCard title={"15/10"} content={"Lunch"} time={"12:00"} isAnimated={false}/>
-              <RightAgendaCard title={"15/10"} content={"CTF end )"} time={"14:30"} isAnimated={false}/>
+              <RightAgendaCard title={"15/10"} content={"CTF end"} time={"14:30"} isAnimated={false}/>
               <LeftAgendaCard title={"15/10"} content={"Closing ceremony and awards"} time={"15:00"} isAnimated={false}/>
           </div>
         </section>
