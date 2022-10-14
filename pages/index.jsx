@@ -5,6 +5,7 @@ import About from '../components/sections/about/Index'
 import Agenda from '../components/sections/agenda/Index'
 import Speakers from '../components/sections/speakers/Index'
 import Partners from '../components/sections/patners/Index'
+import Location from '../components/sections/location/Index'
 import OurClub from '../components/sections/ourClub/Index'
 import Footer from '../components/sections/footer/Index'
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
         <Agenda />
         <Speakers />
         <Partners />
+        <Location />
         <OurClub />
         <Footer />
 
