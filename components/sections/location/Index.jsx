@@ -3,15 +3,10 @@ import Image from 'next/image'
 const Index = () => {
     return (
         <section className="section " id="partners">
-            <SectionTitle title={"Our partners"}/>
-            <div className="flex flex-col items-center gap-6 lg:flex-row">
-                <div className="flex-1">
-                    <Image height={450} width={500} src="/shellmates.png" className="cursor-pointer " alt="CTF photo" />
-                </div>
-                <p className="text-ingehack-white flex-1 text-xl text-center md:text-2xl lg:text-left lg:text-3xl font-NeuHaasRegular">
-                Shellmates Club is a cyber security students club in ESI Algiers. By organizing multiple activities and competitions, their aim is to familiarize the cybersecurity culture in Algeria under the slogan: Where there is a shell, there is a way 
-                </p>
-            </div>
+            <SectionTitle title={"Location"}/>
+ 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.6265162176887!2d-0.5364173999999999!3d35.735402799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7e7cb2d8a1cd23%3A0xd1df821f50020bd!2sUniversity%20of%20Oran%202%20Mohamed%20Ben%20Ahmed!5e0!3m2!1sen!2sdz!4v1665731291576!5m2!1sen!2sdz" loading="lazy" height='800' referrerpolicy="no-referrer-when-downgrade" ></iframe>
+
             
         </section>
     )
