@@ -4,6 +4,7 @@ import Hero from '../components/sections/hero/Index'
 import About from '../components/sections/about/Index'
 import Agenda from '../components/sections/agenda/Index'
 import Speakers from '../components/sections/speakers/Index'
+import Partners from '../components/sections/patners/Index'
 import OurClub from '../components/sections/ourClub/Index'
 import Footer from '../components/sections/footer/Index'
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
         <About />
         <Agenda />
         <Speakers />
+        <Partners />
         <OurClub />
         <Footer />
 
